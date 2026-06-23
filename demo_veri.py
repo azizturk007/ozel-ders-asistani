@@ -42,5 +42,5 @@ def demo_verileri_yukle():
     finally:
         conn.close()
 
-if __name__ == "__main__":
-    demo_verileri_yukle()
+#if __name__ == "__main__":
+ #   demo_verileri_yukle()
