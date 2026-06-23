@@ -46,9 +46,9 @@ def demo_ders_ve_konulari_yukle():
                     cursor.execute("INSERT INTO alt_konular (ders_id, konu_adi) VALUES (?, ?)", (ders_id, konu))
 
         conn.commit()
-        print("✅ 4 adet örnek ders ve her birine 3'er alt konu başarıyla veritabanına eklendi!")
-    except Exception as e:
-        print(f"❌ Bir hata oluştu: {e}")
+      #  print("✅ 4 adet örnek ders ve her birine 3'er alt konu başarıyla veritabanına eklendi!")
+   # except Exception as e:
+      #  print(f"❌ Bir hata oluştu: {e}")
     finally:
         conn.close()
 
