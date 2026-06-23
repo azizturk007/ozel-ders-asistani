@@ -52,5 +52,5 @@ def demo_ders_ve_konulari_yukle():
     finally:
         conn.close()
 
-if __name__ == "__main__":
-    demo_ders_ve_konulari_yukle()
+#if __name__ == "__main__":
+ #   demo_ders_ve_konulari_yukle()
