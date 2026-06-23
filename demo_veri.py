@@ -36,9 +36,9 @@ def demo_verileri_yukle():
                            (ogrenci_id, veli[0], veli[1], veli[2]))
 
         conn.commit()
-        print("✅ 5 adet yeni formatlı örnek öğrenci ve veli başarıyla eklendi!")
-    except Exception as e:
-        print(f"❌ Bir hata oluştu: {e}")
+       # print("✅ 5 adet yeni formatlı örnek öğrenci ve veli başarıyla eklendi!")
+    #except Exception as e:
+     #   print(f"❌ Bir hata oluştu: {e}")
     finally:
         conn.close()
 
