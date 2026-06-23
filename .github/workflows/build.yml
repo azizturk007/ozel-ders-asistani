@@ -25,7 +25,7 @@ jobs:
           
       - name: APK Derle
         # flet build apk komutu zaten flet paketinin içinde gelir
-        run: flet build apk
+        run: flet build apk --project ozeldersasistani --no-color
         
       - name: APK Dosyasını Kaydet
         uses: actions/upload-artifact@v4
