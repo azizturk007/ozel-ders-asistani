@@ -17,7 +17,6 @@ jobs:
       - name: Gerekli Paketleri Kur
         run: |
           pip install flet pandas openpyxl
-          pip install flet-build  # Mobil derleme için ek bileşen
       
       - name: Flutter SDK Kur
         uses: subosito/flutter-action@v2
@@ -25,8 +24,8 @@ jobs:
           channel: 'stable'
           
       - name: APK Derle
-        # main.py dosyanızın en kök dizinde olduğunu varsayıyoruz
-        run: flet build apk --project ozeldersasistani
+        # flet build apk komutu zaten flet paketinin içinde gelir
+        run: flet build apk
         
       - name: APK Dosyasını Kaydet
         uses: actions/upload-artifact@v4
